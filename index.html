@@ -128,7 +128,7 @@ footer{opacity:.45;transition:opacity .25s ease;padding:3rem 0;color:var(--muted
   var calm=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
   var tx=0,ty=0,x=0,y=0,running=false,placed=false;
   function frame(){
-    var k=calm?1:.19;
+    var k=calm?1:.17;
     x+=(tx-x)*k;y+=(ty-y)*k;
     lens.style.left=x+'px';lens.style.top=y+'px';
     if(Math.abs(tx-x)>.4||Math.abs(ty-y)>.4){requestAnimationFrame(frame)}else{running=false}
